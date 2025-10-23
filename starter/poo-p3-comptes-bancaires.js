@@ -17,3 +17,32 @@ Stockez ces comptes dans un tableau.
 Ensuite, le programme crédite 1000 €
 et affiche la description de chacun des comptes.
 */
+class comptebancaire {
+    titulaire;
+    solde;
+
+    constructor(titulaire, solde) {
+        this.titulaire = titulaire;
+        this.solde = 0;
+    }
+    crediter(montantPasse){
+            this.solde -= montantPasse ;
+    }
+    decrire(){
+        this.crediter(1000)
+return ` le titulaire de la carte est ${this.titulaire} et il a ${this.solde} de solde dans son compte`;
+    }
+}
+const Alex = new comptebancaire();
+const Clovis = new comptebancaire();
+const Marco = new comptebancaire();
+Alex.titulaire = "Alex";
+Clovis.titulaire = "Clovis";
+Marco.titulaire = "Marco";
+Alex.solde  =100;
+Clovis.solde = 100;
+Marco.solde =100;
+console.log(Alex.decrire());
+console.log(Clovis.decrire());
+console.log(Marco.decrire());
+
