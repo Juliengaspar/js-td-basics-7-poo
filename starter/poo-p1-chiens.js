@@ -41,3 +41,20 @@ console.log(chien2.decrire());
 console.log(" Les chiens rencontrent un chat...")
 console.log(chien1.aboyer());
 console.log(chien2.aboyer());
+//obj
+const chat = {
+  nom: 'Crockdur',
+  race: 'Chartreux',
+  age: 5,
+  taille: 35,
+    Miauller (){
+      return "Mia miauller ";
+    },
+    decrire() {
+        return ` le chat s'appelle ${this.nom} il est de la race des ${this.race} et il fais ${this.taille} centimetres il a actuelement ${this.age} ans!`;
+
+    }
+
+}
+console.log(chat.decrire());
+console.log(`le chat veux a manger ${chat.Miauller()}`);

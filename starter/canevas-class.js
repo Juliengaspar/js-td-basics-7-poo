@@ -28,6 +28,8 @@ class MaClasse {
 
 // 2. Utilisation de la classe pour instancier un objet
 
-const monObjet = new MaClasse('test', 'coucocu', /* ... */); // Instancie un objet de la classe en fournissant les arguments nécessaires
+const monObjet = new MaClasse('test', 'coucocu' /* ... */); // Instancie un objet de la classe en fournissant les arguments nécessaires
+console.log("methode1");
 monObjet.methode1();
+console.log("methode2");
 monObjet.methode2();

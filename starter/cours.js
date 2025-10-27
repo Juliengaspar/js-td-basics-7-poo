@@ -57,3 +57,23 @@ const Sloopy = new Chien("Sloopy", "Caniche", 25);
 // Nos chiens rencontrent un chat...
 console.log(`Tiens, un chat ! ${Tobby.nom} aboie: ${Tobby.aboyer()}`);
 console.log(`Tiens, un chat ! ${Sloopy.nom} aboie: ${Sloopy.aboyer()}`);
+
+class Moi {
+    nom;
+    prenom;
+    age;
+
+    constructor(nom, prenom, age) {
+        this.nom = nom;
+        this.prenom = prenom;
+        this.age = age;
+    }
+    decrireMoi(){
+        return ` bouour je m’appelle ${this.prenom} ${this.nom}! Et j'ai acutuellement ${this.age} ans!`;
+    }
+}
+const julien = new Moi("Gaspar", "Julien", 25);
+console.log(julien);
+console.log(julien.decrireMoi());
+julien.metiers = 'étudiants';
+console.log(julien.decrireMoi()+ ` et je suis actuellement ${julien.metiers}`);
